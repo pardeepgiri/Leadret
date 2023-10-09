@@ -26,6 +26,7 @@ const Mainpage = () => {
           <SeatIcon/>
         </div>
       </div>
+      
     </div>
   )
 }

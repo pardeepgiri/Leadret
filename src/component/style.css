@@ -1,82 +1,123 @@
 .App {
-    text-align: center;
-    margin: 20px;
-  }
-  
-  .seat-selector {
-    margin: 20px;
-    text-align: center;
-    font-size: 21px;
-    font-weight: 600;
-  }
-  
-  .seat-selector select,
-  .seat-selector input {
-    margin: 5px;
-  }
+  width: 80%;
+  text-align: center;
+  margin: 10%;
+}
+.seat-selector{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.seat-selector select,
+.seat-selector input {
+  margin: 5px;
+}
 
-  /* for main page */
-  .seatflex{
-    display: flex;
-    justify-content: center;
-  }
-  .flex1{
-    border: 1px solid rgb(177, 174, 174);
-    border-bottom: none;
-    margin: 10px;
-    padding: 2px;
-    width: 40%;
-  }
+/* icon pages  */
 
-  .seat-map {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-  }
+#seat-type{
+  border: none;
+}
+#seat-quantity{
+  border: none;
+}
+.tickettype{
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px;
+  margin: 20px;
+}
+.seatmap{
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px;
+  margin: 20px;
+}
 
-  /* for seatmap page  */
-  
-  .seat-row {
-    display: flex;
-    margin: 5px;
-  }
-  
-  .avil {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2px;
-    margin-right: 15px;
-    border: 1px solid #ccc;
-  }
-  .booked{
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2px;
-    margin-right: 15px;
-    border: 1px solid #ccc;
-    background-color: lightgreen;
-  }
-  .notavil{
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2px;
-    margin-right: 15px;
-    border: 1px solid #ccc;
-    background-color: lightgray;
-  }
-  .row-name{
-    margin-top: 18px;
-    font-size: 24px;
-    margin-right: 60px;
-    margin-left: 20px;
-  }
-  
+/* for main page */
+.seatflex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex1 {
+  margin: 10px;
+  padding: 2px;
+  width: 45%;
+}
+
+.seat-map {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* for seatmap page  */
+.seatbox {
+  border: 1px solid rgb(119, 118, 118);
+  padding: 30px;
+  /* margin-bottom: 30px; */
+}
+
+.seat-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+.avil {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  margin-right: 15px;
+  border: 1px solid #ccc;
+}
+
+.booked {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  margin-right: 15px;
+  border: 1px solid #ccc;
+  background-color: lightgreen;
+}
+
+.notavil {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  margin-right: 15px;
+  border: 1px solid #ccc;
+  background-color: lightgray;
+}
+
+.row-name {
+  margin-top: 18px;
+  font-size: 24px;
+  margin-right: 60px;
+  margin-left: 20px;
+}
+
+.procbtn {
+  background-color: rgb(214, 22, 22);
+  font-size: 18px;
+  font-weight: 500;
+  color: #ccc;
+  text-align: right;
+  float: right;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
